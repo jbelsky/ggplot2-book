@@ -11,7 +11,7 @@ This repo downloaded the [Miniconda3 Windows 64-bit](https://repo.anaconda.com/m
 which contains python v3.9 and conda v4.9.2
 
 2.  Update to the newest version
-	```powershell
+	```cmd
 	(base) C:\Users\jab112> conda update conda
 	
 	(base) C:\Users\jab112> conda --version
@@ -19,7 +19,7 @@ which contains python v3.9 and conda v4.9.2
     ```
 
 3.  Create the conda environment
-	```powershell
+	```cmd
 	(base) C:\Users\jab112> conda create --name ggplot2-book
 	
 	# Add the conda-forge conda channel
@@ -36,33 +36,24 @@ which contains python v3.9 and conda v4.9.2
 	```
 
 4.  Install R (v4.0.3) and Jupyter
-    ```powershell
+    ```cmd
 	(ggplot2-book) C:\Users\jab112> conda install r-base=4.0.3
 	
 	(ggplot2-book) C:\Users\jab112> conda install jupyter
 	
 	# Initiate an R session to install the required packages
 	(ggplot2-book) C:\Users\jab112> R
-	
-	R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
-	Copyright (C) 2020 The R Foundation for Statistical Computing
-	Platform: x86_64-w64-mingw32/x64 (64-bit)	
-	
-	...
-	
-	Type 'demo()' for some demos, 'help()' for on-line help, or
-	'help.start()' for an HTML browser interface to help.
-	Type 'q()' to quit R.
-	
+
+    ```	
+
+5.  Install the `IRkernel` package
+	```R
 	> install.packages("IRkernel")
 	
 	> IRkernel::installspec()
 	```
 
-5.  Quit R, and start the Jupyter Notebook
-	```powershell
-	> q()
-	
+5.  Start the Jupyter Notebook
+	```cmd	
 	(ggplot2-book) C:\Users\jab112> jupyter notebook
-	
-    ```
+	```
